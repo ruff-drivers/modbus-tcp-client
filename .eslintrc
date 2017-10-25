@@ -1,0 +1,6 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": "./node_modules/ruff-standard/eslint-driver.json"
+}
