@@ -15,8 +15,8 @@ var lib = require('./lib');
 function ModbusTcpClient(options) {
     EventEmitter.call(this);
     var that = this;
-    this._debug = options.debug || false;
     options = options || Object.create(null);
+    this._debug = options.debug || false;
     this._host = options.host || '127.0.0.1';
     this._port = options.port || 502;
     this._cmdTimeout = options.cmdTimeout || 500;
